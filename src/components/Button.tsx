@@ -1,9 +1,9 @@
 type ButtonProps = {
-    text: string
+    children: string
 }
 
-export default function Button({ text }: ButtonProps) {
+export default function Button({ children }: ButtonProps) {
     return (
-        <button>{text}</button>
+        <button>{children}</button>
     )
 }

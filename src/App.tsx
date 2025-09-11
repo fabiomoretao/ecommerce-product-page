@@ -19,7 +19,7 @@ export default function App() {
           <h3>$250.00</h3>
         </div>
 
-        <Button text='Add to cart' />
+        <Button>Add to cart</Button>
       </section>
       <div className="text-(#fff)">
         Challenge by
