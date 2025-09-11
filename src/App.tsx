@@ -3,7 +3,7 @@ import Photos from "./components/Photos";
 
 export default function App() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Photos />
       Collections Men Women About Contact Sneaker Company Fall Limited Edition
       Sneakers These low-profile sneakers are your perfect casual wear companion.
