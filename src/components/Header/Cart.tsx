@@ -10,11 +10,11 @@ export default function Cart() {
         <div>
             <img
                 src={CartImg}
-                onClick={() => setIsOpen((prev) => !prev)}
-                className="cursor-pointer"
+                onClick={() => { setIsOpen((prev) => !prev) }}
+                className={`cursor-pointer hover:scale-110 ${isOpen ? 'scale-115' : ''}`}
             />
             <div
-                className={`  flex-col gap-4 absolute grow bg-white top-[10vh]  left-[5vw] flex min-h-[30vh] max-h-[35vh] w-[90vw] rounded-lg py-4 transition-all duration-500 ease-in-out
+                className={`flex flex-col gap-4 absolute grow bg-white top-[10vh] left-[5vw] min-h-[30vh] max-h-[35vh] w-[90vw] rounded-lg py-4 transition-all duration-500 ease-in-out
           ${isOpen ? "opacity-100" : "opacity-0 -translate-y-10 invisible"}
         `}
             >
