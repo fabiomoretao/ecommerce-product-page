@@ -10,8 +10,8 @@ export default function App() {
         <h2>Fall Limited Edition Sneakers</h2>
         <p>
           These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything the
-          weather can offer.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
         </p>
         <div>
           <h2>$125.00</h2>
@@ -23,9 +23,11 @@ export default function App() {
       </section>
       <div className="text-(#fff)">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a>. Coded by <a href="#">Fábio Moretão</a>.
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="#">Fábio Moretão</a>.
       </div>
     </main>
-  )
+  );
 }

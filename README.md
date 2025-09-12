@@ -81,8 +81,8 @@ Para ver como adicionar trechos de código, veja abaixo:
 
 ```jsx
 const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  console.log("🎉");
+};
 ```
 
 Se quiser mais ajuda com markdown, recomendamos dar uma olhada em [The Markdown Guide](https://www.markdownguide.org/) para aprender mais.
