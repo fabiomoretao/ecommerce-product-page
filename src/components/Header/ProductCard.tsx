@@ -16,7 +16,7 @@ export default function ProductCard({
   return (
     <div className="flex max-h-[8vh] gap-4 items-center mx-4">
       <img src={thumbnail} className="max-h-[8vh] rounded-sm object-cover" />
-      <div className="max-w-[50vw]">
+      <div className="max-w-[40vw]">
         <p className="truncate">{productName}</p>
         <p>
           ${productPrice} X {quantity}{" "}

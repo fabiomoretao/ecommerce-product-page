@@ -14,7 +14,7 @@ export default function Cart() {
                 className={`cursor-pointer hover:scale-110 ${isOpen ? 'scale-115' : ''}`}
             />
             <div
-                className={`flex flex-col gap-4 absolute grow bg-white top-[10vh] left-[5vw] min-h-[30vh] max-h-[35vh] w-[90vw] rounded-lg py-4 transition-all duration-500 ease-in-out
+                className={`flex flex-col gap-4 absolute grow bg-white top-[7vh] left-[5vw] min-h-[30vh] max-h-[35vh] w-[90vw] rounded-lg py-4 transition-all duration-500 ease-in-out shadow-md
           ${isOpen ? "opacity-100" : "opacity-0 -translate-y-10 invisible"}
         `}
             >
@@ -40,14 +40,7 @@ export default function Cart() {
                         quantity={2}
                     />
                 </section>
-                <Button>Checkout</Button>
-                {/* {product ?
-                    product
-                    :
-                    <p className="self-center font-bold text-dark-grayish-blue text-sm mt-[5vh]">
-                        Your cart is empty.
-                    </p>
-                } */}
+                <Button className="mx-4">Checkout</Button>
             </div>
         </div>
     );
