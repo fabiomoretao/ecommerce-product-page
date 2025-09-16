@@ -46,8 +46,7 @@ export default function Photos() {
           alt={`Product ${i + 1}`}
           loading={i === index ? "eager" : "lazy"}
           className={
-            "object-cover object-top absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out pointer-events-none" +
-            (i === index ? "opacity-100 -z-10" : "opacity-0 -z-20")
+            `object-cover object-top absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out pointer-events-none ${i === index ? "opacity-100 -z-10" : "opacity-0 -z-20"}`
           }
         />
       ))}
