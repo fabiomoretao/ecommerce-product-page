@@ -1,3 +1,7 @@
+// Componente que renderiza um carrossel simples de imagens do produto.
+// - Pré-carrega imagens no useEffect para evitar "flash" quando a imagem for exibida.
+// - Controla índice atual com estado local e permite navegar com botões Prev/Next.
+
 import img1 from "../assets/image-product-1.jpg"
 import img2 from "../assets/image-product-2.jpg"
 import img3 from "../assets/image-product-3.jpg"
@@ -11,6 +15,7 @@ const photos: string[] = [img1, img2, img3, img4]
 export default function Photos() {
   const [index, setIndex] = useState<number>(0)
 
+  // Pré-carrega todas as imagens ao montar o componente para melhorar a experiência de troca de imagem.
   useEffect(() => {
     photos.forEach(src => {
       const img = new Image()
@@ -18,9 +23,9 @@ export default function Photos() {
     })
   }, [])
 
-
   return (
     <div className="w-screen relative flex items-center h-[30vh] justify-between">
+
       <button
         type="button"
         aria-label="Previous photo"
@@ -30,6 +35,10 @@ export default function Photos() {
         <img src={preview} />
       </button>
 
+      {/* Renderiza todas as imagens, controlando visibilidade via classes CSS (opacity + z-index). 
+          - Mantém todas no DOM para permitir transição suave entre elas.
+          - `loading={i === index ? "eager" : "lazy"}`: apenas a imagem visível é carregada prioritariamente.
+      */}
       {photos.map((src, i) => (
         <img
           key={i}
