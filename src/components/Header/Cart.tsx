@@ -15,7 +15,7 @@ export default function Cart() {
             />
             <div
                 className={`flex flex-col gap-4 absolute grow bg-white top-[7vh] left-[5vw] min-h-[30vh] max-h-[35vh] w-[90vw] rounded-lg py-4 transition-all duration-500 ease-in-out shadow-md
-          ${isOpen ? "opacity-100" : "opacity-0 -translate-y-10 invisible"}
+          ${isOpen ? "opacity-100 z-20" : "opacity-0 -translate-y-10 invisible"}
         `}
             >
                 <h3 className="font-bold px-4">Cart</h3>
